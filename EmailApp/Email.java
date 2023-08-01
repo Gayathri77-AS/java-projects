@@ -6,9 +6,11 @@ public class Email {
     private String Lastname;
     private String Password;
     private String Department;
+    private String email;
     private int MailboxCapacity;
     private int defaultPasswordLength = 10;
     private String alternateEmail;
+    private String companysuffix = "giya.com";
 //constructor first and last name
 //department
 //random pswd
@@ -19,12 +21,13 @@ public class Email {
 public Email(String Firstname, String Lastname){
     this.Firstname = Firstname;
     this.Lastname = Lastname;
-    System.out.println("Email created "+this.Firstname+""+this.Lastname);
+    System.out.println("Full Name: "+this.Firstname+""+this.Lastname);
     this.Department = setDepartment();
-    System.out.println("Department"+this.Department);
+    System.out.println("Department: "+this.Department);
     this.Password = randomPassword(defaultPasswordLength);
-    System.out.println("Your Password "+this.Password);
-
+    System.out.println("Your Password: "+this.Password);
+    email = Firstname.toLowerCase()+"."+Lastname.toLowerCase()+"@"+Department+"."+companysuffix;
+    System.out.println("Email Generated: "+this.email);
 }
 
 private String setDepartment(){
@@ -46,6 +49,9 @@ private String randomPassword(int length){
     }
     return new String (password);
 }
+
+
+
 
 
 
