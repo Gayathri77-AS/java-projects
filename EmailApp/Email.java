@@ -7,6 +7,8 @@ public class Email {
     private String Password;
     private String Department;
     private String email;
+
+
     private int MailboxCapacity = 500;
     private int defaultPasswordLength = 10;
     private String alternateEmail;
@@ -34,6 +36,7 @@ private String setDepartment(){
     System.out.println("Enter the department \n1 for Sales \n2 for development \n3 for accounting \n0 for none \n Enter department code");
     Scanner in = new Scanner(System.in);
     int depChoice = in.nextInt();
+    in.close();
     if (depChoice == 1){ return "sales";}
     else if (depChoice == 2){ return "development";}
     else if (depChoice == 3){ return "accounting";}
