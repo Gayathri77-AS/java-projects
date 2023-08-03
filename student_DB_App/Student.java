@@ -39,16 +39,21 @@ public class Student {
 
     //enroll in courses
     public void enroll(){
-        System.out.println("Enter course to enroll ( Q to quit):");
+        System.out.println("Enter course to enroll Q to quit:");
         Scanner cou = new Scanner(System.in);
-        String course = cou.nextLine();
-        
+        this.courses = cou.nextLine();
+        /*String course;
+        if(cou.hasNextLine())
+            course = cou.nextLine();
+        else
+            course = "Q";
+        cou.close();
         if (course != "Q"){
-            courses = courses+ "\n" + course;
+            courses = courses + "\n" + course;
             tutionBalance = tutionBalance + costOfcourse ;
         }
         System.out.println("Enrolled in " +courses);
-        System.out.println("Tution Balance "+tutionBalance);
+        System.out.println("Tution Balance "+tutionBalance);*/
     }
     //view balance
     
