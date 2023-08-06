@@ -6,6 +6,5 @@ public class StudentDatabaseApp {
      */
     public static void main(String[] args)throws IOException{
         Student st1 = new Student();
-        st1.enroll();
     }
 }

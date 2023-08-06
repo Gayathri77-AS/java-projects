@@ -10,6 +10,7 @@ public class Student {
     private int tutionBalance = 0;
     private int costOfcourse = 600;
     private static int id = 1000;
+    private String enroll;
     //constructor prompt user to enter students name and year
     public Student(){
         Scanner in = new Scanner(System.in);
@@ -22,7 +23,7 @@ public class Student {
         in.close();
         setStudentID();
         System.out.println(firstname+""+lastname+" "+gradeyear+" "+studentID);
-        enroll();
+        this.enroll = enroll();
     }
     //generate an ID
     private String setStudentID(){
@@ -30,12 +31,13 @@ public class Student {
         return this.studentID = gradeyear + "" + id;
     }
     //enroll in courses
-    public void enroll(){
+    private String enroll(){
     System.out.println("Enter the department \n1 for Sales \n2 for development \n3 for accounting \n0 for none \n Enter department code");
     Scanner loc = new Scanner(System.in);
-    int depChoice = loc.nextInt();
-    System.out.println(depChoice);
+    String depChoice = loc.nextLine();
     loc.close();
+    return depChoice;
+    
     /*if (cou != "Q"){
             courses = courses + "\n" + course;
             tutionBalance = tutionBalance + costOfcourse ;
