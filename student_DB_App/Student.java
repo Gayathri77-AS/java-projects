@@ -1,7 +1,6 @@
 package student_DB_App;
 
 import java.util.Scanner;
-
 public class Student {
 
     private String firstname;
@@ -28,6 +27,7 @@ public class Student {
         in.close();
         setStudentID();
         System.out.println(firstname+""+lastname+" "+gradeyear+" "+studentID);
+        enroll();
     }
 
     //generate an ID
@@ -39,16 +39,12 @@ public class Student {
 
     //enroll in courses
     public void enroll(){
-        System.out.println("Enter course to enroll Q to quit:");
-        Scanner cou = new Scanner(System.in);
-        this.courses = cou.nextLine();
-        /*String course;
-        if(cou.hasNextLine())
-            course = cou.nextLine();
-        else
-            course = "Q";
-        cou.close();
-        if (course != "Q"){
+    System.out.println("Enter the department \n1 for Sales \n2 for development \n3 for accounting \n0 for none \n Enter department code");
+    Scanner in = new Scanner(System.in);
+    int depChoice = in.nextInt();
+    System.out.println(depChoice);
+    in.close();
+    /*if (cou != "Q"){
             courses = courses + "\n" + course;
             tutionBalance = tutionBalance + costOfcourse ;
         }
