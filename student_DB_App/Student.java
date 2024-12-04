@@ -8,7 +8,7 @@ public class Student {
     private int studentID;
     private String courses;
     private int tutionBalance;
-    private int costOfcourse + 600;
+    private int costOfcourse = 600;
 
 
 
