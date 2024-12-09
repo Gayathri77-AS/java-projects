@@ -4,6 +4,7 @@ public class selectionsort {
 
         // Perform selection sort
         selectionSort(myArray);
+        selectionSort_optimized(myArray);
 
         // Print sorted array
         System.out.print("Sorted array: ");
@@ -30,5 +31,24 @@ public class selectionsort {
             arr[minIndex] = arr[i];
             arr[i] = minValue;
         }
+    }
+
+    public static void selectionSort_optimized(int[] arr) 
+    { 
+        int n = arr.length; 
+        for (int i = 0; i < n; i++)
+        { 
+           int minIndex = i; // Find the minimum element in the unsorted part of the array 
+           for (int j = i + 1; j < n; j++)
+            { 
+              if (arr[j] < arr[minIndex])
+              { 
+                minIndex = j; 
+              } 
+            } // Swap the found minimum element with the first element
+            int temp = arr[minIndex]; 
+            arr[minIndex] = arr[i]; 
+            arr[i] = temp;
+        } 
     }
 }
