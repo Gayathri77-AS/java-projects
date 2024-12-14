@@ -18,7 +18,7 @@ class Main {
 
 // Output -- T1r1y1 1p1r1o1g1r1a1m1i1z6.1p1r1o1
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 //Swap string without 3rd variable
 
 public class Main {
@@ -46,7 +46,7 @@ Output : Hope For Best
          Try Programiz Pro
 */
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 //Remove space from the given string
 class Main {
     public static void main(String[] args) {
@@ -64,7 +64,7 @@ class Main {
 
 //Output : Tryprogramizpro
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 //Printing charcters in even index
 class Main { 
     public static void main(String[] args) {
@@ -79,7 +79,7 @@ class Main {
 
 //Output:Typormzpo
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 //Print each letter twice from the string
 class Main { 
     public static void main(String[] args) {
@@ -94,7 +94,7 @@ class Main {
 
 //Output: TTrryy  pprrooggrraammiizz..pprroo
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 // Leapyear checks without using modulus operator
 class Main { 
     public static void main(String[] args) {
@@ -127,7 +127,7 @@ class Main {
 Hint : (year divisible by 4 AND (year not divisible by 100 or year divisible by 400))
 */
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 // base raised to exponent without using built in power function
 class Main { 
     public static void main(String[] args) {
@@ -160,7 +160,7 @@ class Main {
 
 //Output: 8
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 //Reverse a string in Java without using built-in string reversal functions
 
 class Main { 
@@ -186,7 +186,7 @@ class Main {
 //Reverse a string in Java using built-in string reversal functions
 public class Main {
     public static void main(String[] args) {
-        String original = "Hello, World!";
+        String original = "Try programiz.pro";
         String reversed = new StringBuilder(original).reverse().toString();
         
         System.out.println("Original: " + original);
@@ -196,4 +196,20 @@ public class Main {
 
 //Output: orp.zimargorp yrT
 
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+//Count spaces in a string
+public class Main {
+    public static void main(String[] args) {
+        String s = "Hello, World! How are you today?";
+        int count = 0;
+        for (int i=0;i<s.length();i++){
+            if(s.charAt(i)==' '){
+                count ++;
+            }
+        }
+        System.out.print(count);
+    }
+}
+//Output: 5
+
+------------------------------------------------------------------------------------------------------------------------0
