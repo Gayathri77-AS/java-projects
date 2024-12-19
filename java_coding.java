@@ -64,7 +64,7 @@ class Main {
 
 //Output : Tryprogramizpro
 
-------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 //Printing charcters in even index
 class Main { 
     public static void main(String[] args) {
@@ -79,7 +79,7 @@ class Main {
 
 //Output:Typormzpo
 
-------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 //Print each letter twice from the string
 class Main { 
     public static void main(String[] args) {
@@ -94,7 +94,7 @@ class Main {
 
 //Output: TTrryy  pprrooggrraammiizz..pprroo
 
-------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 // Leapyear checks without using modulus operator
 class Main { 
     public static void main(String[] args) {
@@ -127,7 +127,7 @@ class Main {
 Hint : (year divisible by 4 AND (year not divisible by 100 or year divisible by 400))
 */
 
-------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 // base raised to exponent without using built in power function
 class Main { 
     public static void main(String[] args) {
@@ -160,7 +160,7 @@ class Main {
 
 //Output: 8
 
-------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 //Reverse a string in Java without using built-in string reversal functions
 
 class Main { 
@@ -196,7 +196,7 @@ public class Main {
 
 //Output: orp.zimargorp yrT
 
-------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 //Count spaces in a string
 public class Main {
     public static void main(String[] args) {
@@ -212,4 +212,59 @@ public class Main {
 }
 //Output: 5
 
--------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+//Common elements between two arrays
+import java.util.HashSet;
+import java.util.Set;
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = {4,5,6,7,8};
+        Set<Integer> s1 = new HashSet<>();
+        Set<Integer> commonSet = new HashSet<>();
+        for(int i :arr1){
+            s1.add(i);
+        }
+        for(int i:arr2){
+            if(s1.contains(i)){
+                commonSet.add(i);
+            }
+        }
+        System.out.print(commonSet);
+        
+    }
+}
+
+//Output: [4,5]
+
+//-------------------------------------------------------------------------------------------------------------------------
+//Finding 1st and last elements in an arraylist
+import java.util.ArrayList;
+
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> arrlist = new ArrayList<>();
+        arrlist.add("banana");
+        arrlist.add("apple");
+        arrlist.add("cherry");
+        arrlist.add("berry");
+        if(!arrlist.isEmpty()){
+            String first_elmt = arrlist.get(0);
+            String last_elmt = arrlist.get(arrlist.size()-1);
+            System.out.println(first_elmt);
+            System.out.print(last_elmt);
+        }
+        else{
+            System.out.print("Empty ArrayList");
+        }
+    }
+}
+
+/*
+Output:banana
+berry
+*/
+
+//-------------------------------------------------------------------------------------------------------------------------
+
